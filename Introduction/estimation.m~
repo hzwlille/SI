@@ -1,0 +1,10 @@
+
+function estimation(x,M); 
+
+%TFD du signal
+y=fft(x,M);
+%caculer Ix
+Ix=y.*conj(y);
+plot(abs(y));
+
+end

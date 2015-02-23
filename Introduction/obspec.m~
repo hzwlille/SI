@@ -1,0 +1,9 @@
+function obspec(nu0,N,Nfft,fen); % fonction sans paramètre de sortie
+
+w = hanning(15); % crée une fenêtre de Hanning sous forme de vecteur colonne
+% la longueur du signal
+fft(x.*w,Nfft); % calcule la fft de x fenêtré par w sur Nfft points
+
+
+end
+
