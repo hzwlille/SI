@@ -1,10 +1,11 @@
 
-function estimation(x,M); 
-
+function estimation(x,N,M); 
+j=x(1:N);
+w = hanning(N); % crée une fenêtre de Hanning sous forme de vecteur colonne
 %TFD du signal
-y=fft(x,M);
+y=fft(j,M);
 %caculer Ix
 Ix=y.*conj(y);
-plot(abs(y));
+plot(Ix);
 
 end
