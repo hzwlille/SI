@@ -12,10 +12,12 @@ Ae=[A,b;zeros(1,3),0]*T;
 Exp_Ae=expm(Ae);
 fi=Exp_Ae(1:3,1:3);
 ps=Exp_Ae(1:3,4);
-for k=1:10*Fe-1,
-    x(:,k+1)=fi*x(:,k)+ps*e(k);
-end
-s = cT*x;
+polyD=poly(fi);
+les_poles=roots(polyD);
+polyN=poly(fi-ps*cT)-polyD;
+les_zeros=roots(polyN);
+filter_N=poly(les_poles(2:3));
+filter_D=poly(les_zeros(2));
+
+s=filter(filter_N,filter_D,e,[0,0]);
 plot(s);
-
-
