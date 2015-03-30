@@ -1,0 +1,6 @@
+
+N=
+%réalisation du filtre Remez
+firpm(N,[0,1/6-0.1,1/6+0.1,1/2]*2,[2,2,0,0]);
+
+freqz(h);

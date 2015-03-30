@@ -1,0 +1,4 @@
+%Tracer TFD de w
+
+w=hann(Nw);
+fft(w)
