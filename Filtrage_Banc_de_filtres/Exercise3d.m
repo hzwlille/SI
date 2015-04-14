@@ -52,7 +52,24 @@ if affich
     
 freq = (0:M/2)/M*Fe;
 b = [0:Nt-1]*R/Fe+Nw/2;
-imagesc(b,freq,db(abs(Xtilde(1:L,:))))
+imagesc(b,freq,db(abs(Xtilde(3,:))))
 axis xy
 
 end
+
+
+for u=1:Nt;
+    deb = (u-1)*R +1;
+    fin = deb+M-1;
+    ys=ifft(Xtilde(:,u)).*w(1:M);
+    y(deb:fin) = y(deb:fin)+ys; 
+end
+for u=1:Nt;
+    deb = (u-1)*R +1;
+    fin = deb+M-1;
+    ys=ifft(Xtilde(:,u)).*w(1:M);
+    y(deb:fin) = y(deb:fin)+ys; 
+end
+
+
+

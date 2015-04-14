@@ -1,0 +1,816 @@
+/*
+    Document    : global.css
+    Created on  : 03/2012
+    Description : styles globales (site pÃ©dagogique)
+*/
+
+
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #636464;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+a {
+    color: #67443c;
+}
+
+a:hover,
+a:focus {
+    color: #c50747;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p {
+    margin: 0 0 6px 0;
+    line-height: 16px;
+}
+
+img {
+    border: none;
+}
+
+img.toogle_content {
+    background: white;
+    float: right;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid #007a94;
+    margin: 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+h2, h3, h4, h5, h6 {
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    padding-left: 20px;
+    border-bottom: 1px dotted #ccc;
+    margin-top: 12px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 2.1em;
+}
+
+#content_wrapper>h1 {
+    text-align: center;
+}
+
+#POPUP_LICENSE h1 {
+    margin: 0;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+/* rubric content block */
+.ctt {
+    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.ctt h1,
+.ctt h2,
+.ctt h3 {
+    background: none;
+    padding-left: 0;
+    color: #333;
+    border: none;
+}
+
+.ctt h1 {
+    font-size: 1.25em;
+    margin-bottom: 12px;
+}
+
+.ctt ul {
+    margin-left: 30px;
+}
+
+.file,
+.link {
+    clear: both;
+}
+
+p.fileComment {
+    padding-left: 25px;
+    margin: -10px 0 25px 0;
+}
+
+h2,
+#WRNEWZ_HD h4 {
+    color: #c50747;
+}
+
+h2 {
+    font-size: 1.3em;
+    background-image: url('/images/puce_carre_rouge.png');
+    background-position: 0px 4px;
+}
+
+h3,
+.subrubric h2,
+.comment_title h5,
+.PART_DECO h5 {
+    color: #007a94;
+}
+
+.comment_title h5 {
+    width: 88%;
+    margin: 0
+}
+
+h3,
+.subrubric h2 {
+    font-size: 1.15em;
+    background-image: url('/images/puce_carre_bleu.png');
+}
+
+h4 {
+    font-size: 16px;
+    color: #777;
+    background-image: url('/images/puce_gris.png');
+}
+
+.link h4,
+.file h4 {
+    font-size: 0.9em;
+}
+
+.link h4 {
+    background-image: url('/images/puce_lien.png');
+}
+
+.file h4 {
+    background: none;
+    padding-left: 20px;
+    margin-left: 25px;
+}
+
+#orderContentTree h2:hover,
+#orderContentTree h3:hover,
+#orderContentTree h4:hover
+{
+    background-color: #efefef;
+}
+
+#orderContentTree h3 {
+    margin-left: 20px;
+}
+
+#orderContentTree h4 {
+    margin-left: 40px;
+}
+
+#WRNEWZ_HD h4 {
+    background: none;
+    padding: 5px 10px;
+}
+
+
+/* ---------------------------- */
+
+#container,
+#ALLZ {
+    width: 99%;
+    margin: 1% 0 0 1%;
+}
+
+#header {
+    width: 100%;
+    height: 110px;
+}
+
+#headerbar {
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    height: 30px;
+    width: 99%;
+    text-align: center;
+    font-weight: bold;
+    color: #104060;
+    border-top: 4px solid #007a94;
+}
+
+#logos {
+    position: absolute;
+    z-index: 100;
+    left: 1%;
+    height: 98px;
+}
+
+#logo_tpt {
+    float: left;
+    height: 98px;
+    width: 90px;
+    background: url('../../images/logo_tpt.png') no-repeat top left #fff;
+    margin: 4px 0 0 0;
+    border-left: 5px solid #fff;
+}
+
+#logo_sp,
+#logo_sp_placeholder {
+    float: left;
+    height: 98px;
+    width: 260px;
+}
+
+#logo_sp {
+    background: url('../../images/logo_sitepedago.png') bottom left no-repeat #fff;
+}
+
+#logo_sp_placeholder {
+    background: none;
+}
+
+#logo_sp_public {
+    position: absolute;
+    left: 230px;
+    top: 60px;
+    width: 200px;
+    height: 30px;
+    background: url('../../images/logo-savp.gif') top left no-repeat transparent;
+}
+
+#logo_paristech {
+    position: absolute;
+    top: 0;
+    right: 250px;
+    width: 172px;
+    height: 46px;
+    background: url('../../images/logo_paristech.png') top left no-repeat transparent;
+}
+
+#content_wrapper {
+    float: right;
+    width: 72%;
+}
+
+#CONTENT {
+    position: relative;
+    font-size: 14px;
+    margin: 0 1% 0 0;
+}
+
+#CONTENT img {
+    padding: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+#sidebar {
+    width: 235px;
+    margin: 0 1% 0 0;
+    float: left;
+}
+
+.sidebar_header {
+    width: 235px;
+    height: 14px;
+    background: url('../../images/sidebar_left_header.png') top left no-repeat #c50747;
+}
+
+.sidebar_content {
+    display: block;
+    width: 233px;
+    margin: 0 0 30px 0;
+    padding: 0;
+    background-color: #e3e5e5;
+    border: 1px solid #d0023c;
+    border-bottom-right-radius: 10px;
+    box-shadow: 8px 8px 12px #aaa;
+}
+
+.sidebar_content div {
+    display: block;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #999;
+    margin: 3px 0;
+    padding: 2px 5px;
+}
+
+input[type=checkbox],
+.cb {
+    border: 0px;
+    margin: 0;
+}
+
+input[type=button],
+.bt {
+    cursor: pointer;
+}
+
+#LOADDIV {
+    position: absolute;
+    width: 205px;
+    height: 85px;
+    top: 22%;
+    left: 43%;
+    background-image: url('../../images/loading_div.gif');
+    background-repeat: no-repeat;
+    z-index: 1000;
+    display: none;
+}
+
+#LOADDIV img {
+    padding: 23px 0px 0px 17px;
+}
+
+#POPUP_LICENSE {
+    display: none;
+    position: absolute;
+    z-index: 130;
+    top: 100px;
+    left: 22%;
+    width: 60%;
+    height: 450px;
+    border: 2px solid #c50747;
+    background-color: white;
+    padding: 20px;
+    overflow: auto;
+    /* HACK IE7 */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* END HACK IE7 */
+}
+
+#close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 200;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.contentBlock {
+    padding: 6px 0 6px 25px
+}
+
+.toolbar {
+    position: relative;
+    float: right;
+    margin-top: -2px;
+}
+
+.toolbar img {
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.PARTAGE .toolbar,
+.WRAPTH .toolbar {
+    right: 2%;
+    margin: -22px 0 0 0;
+}
+
+.WRAPTHCL .toolbar {
+    display: none;
+}
+
+#toolbarMainEntry {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.PART_DOS .toolbar,
+.PART_FILE .toolbar {
+    position: absolute;
+    right: 1%;
+    margin-top: 26px;
+}
+
+.addShareFolder {
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #c50747;
+}
+
+.ARTSHOWPANEL {
+
+}
+
+.PART_EXP {
+    position: relative;
+    float: right;
+    width:350px;
+    font-style: italic;
+    margin-right: 20px
+}
+
+.C_MSG {
+    border-bottom: 1px dotted #aaa;
+}
+
+.WRAPTH h5,
+.PART_DECO h5 {
+    border: none;
+    background: #efefef;
+    margin: 20px 0 0 0;
+    padding: 6px 0 6px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.C_MSG .postResponseContent {
+    padding: 6px 0 12px 20px;
+    background: #fefefe
+}
+
+.ADD_COMM {
+    display: none;
+    padding: 10px 60px 10px 60px;
+    border-right: 3px solid #007a94;
+    border-bottom: 3px solid #007a94;
+    background-color: #fff;
+}
+
+#EQUIP_PEDAG,
+#DESC_ADMIN,
+#EDT {
+    width: 450px;
+    display: none;
+    padding: 5px 0 25px 0;
+}
+
+#logout {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+#logout a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logout a:hover {
+    color: #c50747;
+}
+
+#menu_side ul {
+    margin: 4px 0 4px 12px;
+}
+
+/* toutes les niveaux */
+#menu_side ul li {
+    display: block;
+    list-style: none;
+    font-size: 11px;
+    line-height: 200%;
+    background: url('../../images/menugch_puce-off.png') no-repeat 0 11px;
+    padding: 0 0 0 12px;
+}
+
+/* niveaux 1 */
+#menu_side ul > li {
+    line-height: 15px;
+    margin-left: 0;
+    padding: 8px 0px 2px 12px;
+}
+
+#menu_side ul > li:focus,
+#menu_side ul > li:active {
+    background: url('../../images/menugch_puce-on.png') no-repeat 0 11px;
+}
+
+#menu_side a {
+    text-decoration: none;
+}
+#menu_side a:hover,
+#menu_side a:active,
+#menu_side a:focus {
+    text-decoration: underline;
+    color: #d0023c;
+}
+
+#menu_side ul > li a {
+    color: #D0023C;
+    font-weight: bold;
+}
+
+/* niveaux 2 */
+#menu_side ul li ul li {
+
+}
+
+#menu_side ul li ul li a {
+    color: #666;
+    font-weight: normal;
+
+}
+
+.tabmenu {
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+.tabmenu ul {
+    list-style: none;
+}
+
+#tabmenuFileAdmin {
+
+}
+
+#tabmenuFileAdmin .CFGTABS {
+    width: 23%;
+}
+
+#tabmenuFileAdmin .CFGTABS:hover {
+    background: #dfdcd7;
+    color: #333;
+}
+
+#tabmenuFileAdmin .active,
+#tabmenuFileAdmin .CFGTABS:active {
+    background: #007a94;
+    color: #fff;
+}
+
+
+/* ACTIPED CHOOSER */
+.ACTPEDROW:hover {
+    background-color: #007a94;
+    color: white;
+}
+
+#ACTPEDTB th {
+    background-color: #007a94;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    font-size: 105%;
+}
+
+.editLK {
+    padding: 10px 60px 10px 60px;
+    display: none;
+    border-bottom: 3px solid #3A709E;
+}
+
+.clickable,
+.PARTAGE img {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.PARTAGE {
+    margin: 12px 0 60px 0;
+}
+
+.PARTAGE h3 {
+    display: inline;
+    margin: 0 10px;
+}
+
+.comment_title {
+    width: 90%;
+    margin: 0 0 10px 0;
+    line-height: 1.5em;
+    display: inline-block;
+}
+
+.PART_DECO {
+    padding: 10px 0 0 0;
+}
+
+.EDITPART {
+    background-color: #fefefe;
+    padding: 10px 60px;
+}
+
+.PART_DOS,
+.PART_FILE {
+    padding: 1px;
+    min-height: 22px;
+}
+
+.ADDNEWPARTDIR,
+.ARCHIVNIVDIV,
+.CHANGEDIRNAME {
+    float: right;
+    display: none;
+    border: 1px dotted black;
+}
+
+.CHANGEDIRNAME input,
+.CHANGEDIRNAME textarea,
+.CHANGEDIRNAME select,
+.ADDNEWPARTDIR input,
+.ADDNEWPARTDIR textarea,
+.ADDNEWPARTDIR select,
+.ARCHIVNIVDIV input,
+.ARCHIVNIVDIV textarea,
+.ARCHIVNIVDIV select {
+    border: 0;
+    margin: 0;
+}
+
+.FILE_FORMS {
+    min-height: 30px;
+    border-top: 1px dotted #F90;
+    padding: 10px 5px 10px 70px;
+    font-weight: bold;
+}
+
+.FORM_MEF {
+    width: 300px;
+    float: left;
+}
+
+#FILE_PRINTPEDAG {
+    display: none;
+    max-height: 500px;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #104060;
+}
+
+#FILE_PRINTPEDAG select,
+#FILE_PRINTPEDAG input {
+    width: 170px;
+}
+
+#THEFILEFORM #chooseFile {
+    width: 308px;
+}
+
+#FILE_FORM {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #104060;
+    font-size: 11px;
+}
+
+div.WRAPTHCL:hover {
+    background-color: lightblue;
+}
+
+#WRNEWZ {
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 0.9em;
+}
+
+#news_content h5 {
+    padding: 3px 10px;
+    font-size: 11px;
+    color: #333;
+    margin: 0;
+}
+
+#news_content div {
+    padding: 2px 0 4px 4px;
+    margin: 0;
+}
+
+#news_content .news_last_update_date {
+    color: #c50747;
+    margin-right: 6px;
+}
+
+div.NSX,
+div.news_document {
+    color: #333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: none;
+}
+
+.info_new {
+    display: inline;
+    margin: 0 15px;
+    color: #d0023c;
+    font-size: 12px;
+    font-family: Georgia, Garamond, "Times New Roman";
+    font-style: italic;
+}
+
+.info_new span {
+    /* text */
+}
+
+
+.TINYEDITPANE,
+.LOADTOOL,
+.EDITPART,
+.HMODID {
+    display: none;
+}
+
+
+/* debug */
+#debug_popup {
+    position: absolute;
+    z-index: 500;
+    margin: 4% 5% 0 5%;
+    width: 90%;
+    height: 75%;
+    border: 8px solid #f07584;
+    background: #fff0f6;
+    color: #333;
+    font-size: 200%;
+    text-align: center;
+    -moz-opacity: 0.90;
+    opacity: 0.90;
+}
+
+#debug_popup h3 {
+    margin-top: 50px;
+    font-size: 50px;
+    color: #f07584;
+}
+
+#debug_bar {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 99%;
+    padding: 12px 0 15px 1%;
+    line-height: 150%;
+    background: #FFF0F6;
+    border-top: 3px solid #FFD1D6;
+}
+
+
+/* classes générales */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.clearer {
+    clear: both;
+}
+
+.rounded_corners {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.rounded_corners_bottom {
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px; /* future proofing */
+    -khtml-border-radius: 0 0 10px 10px; /* for old Konqueror browsers */
+}
+
+/*  Some browser don't want <strong> to be bold ... */
+strong {
+    font-weight: bold;
+}
+
+.active {
+
+}
+
+.warning {
+    color: #d0023c
+}
+
+
+/* IE styles */
+
+html.ie7 {}
+html.ie8 {}
+html.ie9 {}
+
+.ie7 #sidebar img {
+    margin: -18px 0 0 -20px;
+}

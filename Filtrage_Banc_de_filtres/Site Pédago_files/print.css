@@ -1,0 +1,19 @@
+/* 
+    Document    : print.css
+    Created on  : 03/2012
+    Description : styles imprimer (site pédagogique)
+*/
+#header,
+#sidebar, 
+#top, 
+#topico, 
+#WRNEWZ,
+.toolbar, 
+input {
+    display: none;
+    visibility: hidden;
+}
+
+#content_wrapper {
+    width: 98% !important;
+}
